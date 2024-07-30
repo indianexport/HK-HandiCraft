@@ -10,6 +10,9 @@ const Footer = () => {
                         <ul key={index}>
                             <li>
                                 <Typography
+                                    placeholder={""}
+                                    onPointerEnterCapture={() => { }}
+                                    onPointerLeaveCapture={() => { }}
                                     as="a"
                                     href="#"
                                     color="white"
@@ -22,6 +25,9 @@ const Footer = () => {
                     ))}
                 </div>
                 <Typography
+                    placeholder={""}
+                    onPointerEnterCapture={() => { }}
+                    onPointerLeaveCapture={() => { }}
                     color="blue-gray"
                     className="mt-6 !text-sm !font-normal text-gray-500"
                 >

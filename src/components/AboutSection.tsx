@@ -3,10 +3,10 @@ import { Building2, ChartNoAxesCombined, FileText, Handshake, Scale, ScrollText 
 const AboutSection = () => {
     return (
         <div className="h-full gap-4 p-12 mt-12 mb-2 justify-center items-center">
-            <h1 className="capitalize text-3xl text-center p-4 m-2">About company</h1>
-            <div className="flex justify-around m-2 mt-8">
+            <h1 className="capitalize text-3xl text-center p-4 m-2 text-[#d61242] font-bold">About company</h1>
+            <div className="md:flex justify-around m-2 mt-8">
 
-                <div className="grid grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 gap-8">
                     <div className=" flex gap-2">
                         <Handshake />
                         <span>
@@ -65,9 +65,9 @@ const AboutSection = () => {
 
                 </div>
                 <div className="font-semibold ">
-                   <h1 className=" w-[40vw] p-8 h-full">
-                   Founded in the year 1985, we “H K Handicraft LLP” are a dependable and famous Manufacturer of a broad range of Home Temple, Bangle Box, Dry Fruit Box, etc
-                   </h1>
+                    <h1 className=" w-[40vw] p-8 h-full">
+                        Founded in the year 1985, we “H K Handicraft LLP” are a dependable and famous Manufacturer of a broad range of Home Temple, Bangle Box, Dry Fruit Box, etc
+                    </h1>
                 </div>
             </div>
         </div>

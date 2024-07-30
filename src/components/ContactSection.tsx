@@ -1,43 +1,42 @@
-import { Button, Input, Textarea, Typography } from "@material-tailwind/react";
+import { Button, Input, Textarea } from "@material-tailwind/react";
+import image from "../assets/images/image.png"
 const ContactSection = () => {
     return (
         <section className="px-8 py-8 lg:py-16">
             <div className="container mx-auto text-center">
-                <Typography
-                    variant="h5"
+                <h1
                     color="blue-gray"
-                    className="mb-4 !text-base lg:!text-2xl"
+                    className="mb-4 font-bold lg:!text-2xl"
                 >
                     Customer Care
-                </Typography>
-                <Typography
-                    variant="h1"
+                </h1>
+                <h1
                     color="blue-gray"
-                    className="mb-4 !text-3xl lg:!text-5xl"
+                    className="mb-4 !text-3xl lg:!text-5xl text-gray-900 font-bold"
                 >
                     We&apos;re Here to Help
-                </Typography>
-                <Typography className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl !text-gray-500">
+                </h1>
+                <h1 className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl !text-gray-500">
                     Whether it&apos;s a question about our services, a request for
                     technical assistance, or suggestions for improvement, our team is
                     eager to hear from you.
-                </Typography>
+                </h1>
                 <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
                     <img
-                        src="/image/map.svg"
+                        src={image}
                         alt="map"
-                        className="w-full h-full lg:max-h-[510px]"
+                        className="w-full h-full lg:max-h-[510px] object-cover rounded-lg"
                     />
                     <form
                         action="#"
                         className="flex flex-col gap-4 lg:max-w-sm"
                     >
-                        <Typography
+                        {/* <h1
                             variant="small"
                             className="text-left !font-semibold !text-gray-600"
                         >
                             Select Options for Business Engagement
-                        </Typography>
+                        </h1>
                         <div className="flex gap-4">
                             <Button variant="outlined" className="max-w-fit">
                                 General inquiry
@@ -45,15 +44,14 @@ const ContactSection = () => {
                             <Button variant="outlined" className="max-w-fit">
                                 Product Support
                             </Button>
-                        </div>
+                        </div> */}
                         <div className="grid grid-cols-2 gap-4">
                             <div>
-                                <Typography
-                                    variant="small"
+                                <h1
                                     className="mb-2 text-left font-medium !text-gray-900"
                                 >
                                     First Name
-                                </Typography>
+                                </h1>
                                 <Input
                                     color="gray"
                                     size="lg"
@@ -66,15 +64,20 @@ const ContactSection = () => {
                                     labelProps={{
                                         className: "hidden",
                                     }}
+                                    onPointerEnterCapture={() => { }}
+                                    onPointerLeaveCapture={
+                                        () => { }
+                                    }
+                                    crossOrigin={() => { }}
                                 />
                             </div>
                             <div>
-                                <Typography
-                                    variant="small"
+
+                                <h1
                                     className="mb-2 text-left font-medium !text-gray-900"
                                 >
                                     Last Name
-                                </Typography>
+                                </h1>
                                 <Input
                                     color="gray"
                                     size="lg"
@@ -87,16 +90,20 @@ const ContactSection = () => {
                                     labelProps={{
                                         className: "hidden",
                                     }}
+                                    onPointerEnterCapture={() => { }}
+                                    onPointerLeaveCapture={
+                                        () => { }
+                                    }
+                                    crossOrigin={() => { }}
                                 />
                             </div>
                         </div>
                         <div>
-                            <Typography
-                                variant="small"
+                            <h1
                                 className="mb-2 text-left font-medium !text-gray-900"
                             >
                                 Your Email
-                            </Typography>
+                            </h1>
                             <Input
                                 color="gray"
                                 size="lg"
@@ -109,15 +116,20 @@ const ContactSection = () => {
                                 labelProps={{
                                     className: "hidden",
                                 }}
+                                onPointerEnterCapture={() => { }}
+                                onPointerLeaveCapture={
+                                    () => { }
+                                }
+                                crossOrigin={() => { }}
                             />
                         </div>
                         <div>
-                            <Typography
-                                variant="small"
+                            <h1
+
                                 className="mb-2 text-left font-medium !text-gray-900"
                             >
                                 Your Message
-                            </Typography>
+                            </h1>
                             <Textarea
                                 rows={6}
                                 color="gray"
@@ -130,9 +142,17 @@ const ContactSection = () => {
                                 labelProps={{
                                     className: "hidden",
                                 }}
+                                onPointerEnterCapture={() => { }}
+                                onPointerLeaveCapture={
+                                    () => { }
+                                }
                             />
                         </div>
-                        <Button className="w-full" color="gray">
+                        <Button
+                            placeholder={""}
+                            onPointerEnterCapture={() => { }}
+                            onPointerLeaveCapture={() => { }}
+                            className="w-full p-3 bg-[#d61242] text-white rounded-lg" color="gray">
                             Send message
                         </Button>
                     </form>
