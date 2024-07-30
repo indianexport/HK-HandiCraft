@@ -1,10 +1,10 @@
 import './App.css'
-import AboutSection from './components/AboutSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 import ProductSection from './components/ProductSection'
+import ReviewSection from './components/ReviewSection'
 
 function App() {
 
@@ -13,7 +13,8 @@ function App() {
       <Navbar />
       <HeroSection />
       <ProductSection />
-      <AboutSection />
+      <ReviewSection />
+      {/* <AboutSection /> */}
       <ContactSection />
       <Footer />
     </>

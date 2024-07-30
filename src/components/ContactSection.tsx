@@ -8,7 +8,14 @@ const ContactSection = () => {
                     color="blue-gray"
                     className="mb-4 font-bold lg:!text-2xl"
                 >
-                    Customer Care
+                    <span className="relative flex justify-center text-pink-400">
+                        <div
+                            className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+                        ></div>
+
+                        <span className="relative z-10 bg-white px-6">Customer Care
+                        </span>
+                    </span>
                 </h1>
                 <h1
                     color="blue-gray"
@@ -21,68 +28,82 @@ const ContactSection = () => {
                     technical assistance, or suggestions for improvement, our team is
                     eager to hear from you.
                 </h1>
-                <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
+                <div className="grid grid-cols-1 gap-x-24 gap-y-28 lg:grid-cols-2 items-center ">
                     <img
                         src={image}
                         alt="map"
                         className="w-full h-full lg:max-h-[510px] object-cover rounded-lg"
                     />
-                    <form
-                        action="#"
-                        className="flex flex-col gap-4 lg:max-w-sm"
-                    >
-                        {/* <h1
-                            variant="small"
-                            className="text-left !font-semibold !text-gray-600"
+                    <div className="flex items-center justify-center">
+
+                        <form
+                            action="#"
+                            className="flex flex-col  gap-4 lg:max-w-sm "
                         >
-                            Select Options for Business Engagement
-                        </h1>
-                        <div className="flex gap-4">
-                            <Button variant="outlined" className="max-w-fit">
-                                General inquiry
-                            </Button>
-                            <Button variant="outlined" className="max-w-fit">
-                                Product Support
-                            </Button>
-                        </div> */}
-                        <div className="grid grid-cols-2 gap-4">
-                            <div>
-                                <h1
-                                    className="mb-2 text-left font-medium !text-gray-900"
-                                >
-                                    First Name
-                                </h1>
-                                <Input
-                                    color="gray"
-                                    size="lg"
-                                    placeholder="First Name"
-                                    name="first-name"
-                                    className="focus:border-t-gray-900"
-                                    containerProps={{
-                                        className: "min-w-full",
-                                    }}
-                                    labelProps={{
-                                        className: "hidden",
-                                    }}
-                                    onPointerEnterCapture={() => { }}
-                                    onPointerLeaveCapture={
-                                        () => { }
-                                    }
-                                    crossOrigin={() => { }}
-                                />
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <h1
+                                        className="mb-2 text-left font-medium !text-gray-900"
+                                    >
+                                        First Name
+                                    </h1>
+                                    <Input
+                                        color="gray"
+                                        size="lg"
+                                        placeholder="First Name"
+                                        name="first-name"
+                                        className="focus:border-t-gray-900"
+                                        containerProps={{
+                                            className: "min-w-full",
+                                        }}
+                                        labelProps={{
+                                            className: "hidden",
+                                        }}
+                                        onPointerEnterCapture={() => { }}
+                                        onPointerLeaveCapture={
+                                            () => { }
+                                        }
+                                        crossOrigin={() => { }}
+                                    />
+                                </div>
+                                <div>
+
+                                    <h1
+                                        className="mb-2 text-left font-medium !text-gray-900"
+                                    >
+                                        Last Name
+                                    </h1>
+                                    <Input
+                                        color="gray"
+                                        size="lg"
+                                        placeholder="Last Name"
+                                        name="last-name"
+                                        className="focus:border-t-gray-900"
+                                        containerProps={{
+                                            className: "!min-w-full",
+                                        }}
+                                        labelProps={{
+                                            className: "hidden",
+                                        }}
+                                        onPointerEnterCapture={() => { }}
+                                        onPointerLeaveCapture={
+                                            () => { }
+                                        }
+                                        crossOrigin={() => { }}
+                                    />
+                                </div>
                             </div>
                             <div>
-
                                 <h1
                                     className="mb-2 text-left font-medium !text-gray-900"
                                 >
-                                    Last Name
+                                    Your Email
                                 </h1>
                                 <Input
                                     color="gray"
                                     size="lg"
-                                    placeholder="Last Name"
-                                    name="last-name"
+                                    placeholder="name@email.com"
+                                    name="email"
                                     className="focus:border-t-gray-900"
                                     containerProps={{
                                         className: "!min-w-full",
@@ -97,65 +118,40 @@ const ContactSection = () => {
                                     crossOrigin={() => { }}
                                 />
                             </div>
-                        </div>
-                        <div>
-                            <h1
-                                className="mb-2 text-left font-medium !text-gray-900"
-                            >
-                                Your Email
-                            </h1>
-                            <Input
-                                color="gray"
-                                size="lg"
-                                placeholder="name@email.com"
-                                name="email"
-                                className="focus:border-t-gray-900"
-                                containerProps={{
-                                    className: "!min-w-full",
-                                }}
-                                labelProps={{
-                                    className: "hidden",
-                                }}
-                                onPointerEnterCapture={() => { }}
-                                onPointerLeaveCapture={
-                                    () => { }
-                                }
-                                crossOrigin={() => { }}
-                            />
-                        </div>
-                        <div>
-                            <h1
+                            <div>
+                                <h1
 
-                                className="mb-2 text-left font-medium !text-gray-900"
-                            >
-                                Your Message
-                            </h1>
-                            <Textarea
-                                rows={6}
-                                color="gray"
-                                placeholder="Message"
-                                name="message"
-                                className="focus:border-t-gray-900"
-                                containerProps={{
-                                    className: "!min-w-full",
-                                }}
-                                labelProps={{
-                                    className: "hidden",
-                                }}
+                                    className="mb-2 text-left font-medium !text-gray-900"
+                                >
+                                    Your Message
+                                </h1>
+                                <Textarea
+                                    rows={6}
+                                    color="gray"
+                                    placeholder="Message"
+                                    name="message"
+                                    className="focus:border-t-gray-900"
+                                    containerProps={{
+                                        className: "!min-w-full",
+                                    }}
+                                    labelProps={{
+                                        className: "hidden",
+                                    }}
+                                    onPointerEnterCapture={() => { }}
+                                    onPointerLeaveCapture={
+                                        () => { }
+                                    }
+                                />
+                            </div>
+                            <Button
+                                placeholder={""}
                                 onPointerEnterCapture={() => { }}
-                                onPointerLeaveCapture={
-                                    () => { }
-                                }
-                            />
-                        </div>
-                        <Button
-                            placeholder={""}
-                            onPointerEnterCapture={() => { }}
-                            onPointerLeaveCapture={() => { }}
-                            className="w-full p-3 bg-[#d61242] text-white rounded-lg" color="gray">
-                            Send message
-                        </Button>
-                    </form>
+                                onPointerLeaveCapture={() => { }}
+                                className="w-full p-3 bg-[#d61242] text-white rounded-lg" color="gray">
+                                Send message
+                            </Button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>

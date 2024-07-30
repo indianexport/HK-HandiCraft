@@ -1,38 +1,18 @@
-import { Typography } from "@material-tailwind/react";
-const links = ["Company", "About Us", "Team", "Products", "Blog", "Pricing"];
+import logo from "../assets/logo/h-k-handicrafts-90x90.png"
 const currentYear = new Date().getFullYear();
 const Footer = () => {
     return (
-        <footer className="px-8 py-28">
-            <div className="container mx-auto flex flex-col items-center">
-                <div className="flex flex-wrap items-center justify-center gap-8 pb-8">
-                    {links.map((link, index) => (
-                        <ul key={index}>
-                            <li>
-                                <Typography
-                                    placeholder={""}
-                                    onPointerEnterCapture={() => { }}
-                                    onPointerLeaveCapture={() => { }}
-                                    as="a"
-                                    href="#"
-                                    color="white"
-                                    className="font-medium !text-gray-500 transition-colors hover:!text-gray-900"
-                                >
-                                    {link}
-                                </Typography>
-                            </li>
-                        </ul>
-                    ))}
+        <footer className="bg-gray-50">
+            <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+                <div className="sm:flex sm:items-center sm:justify-between">
+                    <div className="flex justify-center text-teal-600 sm:justify-start">
+                        <img src={logo} alt=""  className="h-12"/>
+                    </div>
+
+                    <p className="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
+                        Copyright &copy; {currentYear}. All rights reserved.
+                    </p>
                 </div>
-                <Typography
-                    placeholder={""}
-                    onPointerEnterCapture={() => { }}
-                    onPointerLeaveCapture={() => { }}
-                    color="blue-gray"
-                    className="mt-6 !text-sm !font-normal text-gray-500"
-                >
-                    Copyright &copy; {currentYear} HK HandiCraft LLP
-                </Typography>
             </div>
         </footer>
     );
