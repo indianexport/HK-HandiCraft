@@ -41,6 +41,7 @@ const ProductSection = () => {
                 </div>
 
                 <ProductCard />
+                
             </div>
         </div >
     );

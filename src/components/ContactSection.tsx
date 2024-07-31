@@ -1,6 +1,11 @@
-import { Button, Input, Textarea } from "@material-tailwind/react";
 import image from "../assets/images/image.png"
 import ScrollRevel from "./ScrollRevel";
+
+import { IoLogoWhatsapp } from "react-icons/io";
+import { CgMail } from "react-icons/cg";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
 const ContactSection = () => {
     return (
         <section className="px-8 py-8 lg:py-16">
@@ -43,123 +48,37 @@ const ContactSection = () => {
                         alt="map"
                         className="w-full h-full lg:max-h-[510px] object-cover rounded-lg"
                     />
-                    <div className="flex items-center justify-center">
+                    <div className=" flex justify-around flex-col md:flex-row gap-y-6 md:gap-x-6 h-full">
 
-                        <form
-                            action="#"
-                            className="flex flex-col  gap-4 lg:max-w-sm "
-                        >
-                            <div className="grid grid-cols-2 gap-4">
-                                <div>
-                                    <h1
-                                        className="mb-2 text-left font-medium !text-gray-900"
-                                    >
-                                        First Name
-                                    </h1>
-                                    <Input
-                                        color="gray"
-                                        size="lg"
-                                        placeholder="First Name"
-                                        name="first-name"
-                                        className="focus:border-t-gray-900"
-                                        containerProps={{
-                                            className: "min-w-full",
-                                        }}
-                                        labelProps={{
-                                            className: "hidden",
-                                        }}
-                                        onPointerEnterCapture={() => { }}
-                                        onPointerLeaveCapture={
-                                            () => { }
-                                        }
-                                        crossOrigin={() => { }}
-                                    />
-                                </div>
-                                <div>
+                        <div className="font-medium">
+                            <div className="flex items-end gap-x-2 justify-center">
 
-                                    <h1
-                                        className="mb-2 text-left font-medium !text-gray-900"
-                                    >
-                                        Last Name
-                                    </h1>
-                                    <Input
-                                        color="gray"
-                                        size="lg"
-                                        placeholder="Last Name"
-                                        name="last-name"
-                                        className="focus:border-t-gray-900"
-                                        containerProps={{
-                                            className: "!min-w-full",
-                                        }}
-                                        labelProps={{
-                                            className: "hidden",
-                                        }}
-                                        onPointerEnterCapture={() => { }}
-                                        onPointerLeaveCapture={
-                                            () => { }
-                                        }
-                                        crossOrigin={() => { }}
-                                    />
-                                </div>
+                                <a href="https://www.google.com/maps?q=23.02554560,72.58655230" target="_blank" rel="noopener"> <FaMapMarkerAlt color="red" size={22} /></a>
+                                <span className="font-semibold">
+                                    Address:</span> <br />
                             </div>
-                            <div>
-                                <h1
-                                    className="mb-2 text-left font-medium !text-gray-900"
-                                >
-                                    Your Email
-                                </h1>
-                                <Input
-                                    color="gray"
-                                    size="lg"
-                                    placeholder="name@email.com"
-                                    name="email"
-                                    className="focus:border-t-gray-900"
-                                    containerProps={{
-                                        className: "!min-w-full",
-                                    }}
-                                    labelProps={{
-                                        className: "hidden",
-                                    }}
-                                    onPointerEnterCapture={() => { }}
-                                    onPointerLeaveCapture={
-                                        () => { }
-                                    }
-                                    crossOrigin={() => { }}
-                                />
+                            <div className="tracking-wide mt-2">
+                                H K Handicraft LLP
+                                Shop No. 4, Sahajanand Market, Pirmohammad Sha Road, Pankore Naka, Ahmedabad - 380001, Gujarat, India
                             </div>
-                            <div>
-                                <h1
+                        </div>
+                        <div className="flex flex-col items-center md:items-end md:gap-x-4 gap-y-3">
+                            <div className=" flex gap-x-2">
+                                <IoLogoWhatsapp className="text-green-300" size={26} />
+                                <a href="https://wa.me/919824139927?text=I%20want%20Best%20Quote%20about%20your%20product" target="_blank" rel="noopener">+91 9824139927</a>
+                            </div>
 
-                                    className="mb-2 text-left font-medium !text-gray-900"
-                                >
-                                    Your Message
-                                </h1>
-                                <Textarea
-                                    rows={6}
-                                    color="gray"
-                                    placeholder="Message"
-                                    name="message"
-                                    className="focus:border-t-gray-900"
-                                    containerProps={{
-                                        className: "!min-w-full",
-                                    }}
-                                    labelProps={{
-                                        className: "hidden",
-                                    }}
-                                    onPointerEnterCapture={() => { }}
-                                    onPointerLeaveCapture={
-                                        () => { }
-                                    }
-                                />
+                            <div className="flex gap-x-2 items-center">
+                                {/* <FaPhoneAlt color="green" /><a href="tel:+91 98241 39927">98241 39927</a> */}
+                                <FaPhoneAlt color="green" /><a href="tel:+91 98255 83224">+91 9825583224</a>
                             </div>
-                            <Button
-                                placeholder={""}
-                                onPointerEnterCapture={() => { }}
-                                onPointerLeaveCapture={() => { }}
-                                className="w-full p-3 bg-[#d61242] text-white rounded-lg" color="gray">
-                                Send message
-                            </Button>
-                        </form>
+                            <div className="flex items-center gap-x-2">
+                                <CgMail className="text-red-300" size={26} />
+                                <a href="mailto:Hkhandicraftllp@gmail.com?subject=HK Handicraft Product&body=I want to talk business">
+                                    Hkhandicraftllp@gmail.com
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

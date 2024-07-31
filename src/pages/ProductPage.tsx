@@ -25,87 +25,87 @@ const CONTENTS = [
     {
         img: templeImage,
         name: "Wooden Home Temple",
-        price: "$1,500"
+        price: "₹ 500"
     },
     {
         img: dryFruitBox,
         name: "Dry Fruit Box",
-        price: "$300"
+        price: "₹ 210"
     },
     {
         img: dandiyaStick,
         name: "Dandiya Stick",
-        price: "$40"
+        price: "₹ 30"
     },
     {
         img: poojaThali,
         name: "Pooja Thali",
-        price: ""
+        price: "₹ 120"
     },
     {
         img: jhula,
         name: "Meenakari jhula",
-        price: ""
+        price: "₹ 700"
     },
     {
         img: woodenBajot,
         name: "Meenakari Handcraft Bajot",
-        price: ""
+        price: "₹ 350"
     },
     {
         img: woodenSinghasan,
         name: "Wooden Singhasan",
-        price: ""
+        price: "₹ 500"
     },
     {
         img: BangalBox,
         name: "Bangle Box",
-        price: ""
+        price: "₹ 500"
     },
     {
         img: jewelleryBox,
         name: "Jewelry Box",
-        price: ""
+        price: "₹ 250"
     },
     {
         img: bullockCart,
         name: "Bullock Cart",
-        price: ""
+        price: "₹ 300"
     },
     {
         img: mukhwas,
         name: "Mukhwas Box",
-        price: ""
+        price: "₹ 150"
     },
     {
         img: key,
         name: "Handicraft Items",
-        price: ""
+        price: "₹ 50"
     },
     {
         img: servingGlass,
         name: "Serving Tray And Glass",
-        price: ""
+        price: "₹ 600"
     },
     {
         img: keyHolder,
         name: "Key Holder",
-        price: ""
+        price: "₹ 120"
     },
     {
         img: woodenDoli,
         name: "Minakari Doli",
-        price: ""
+        price: "₹ 600"
     },
     {
         img: woodenBox,
         name: "Wooden Box",
-        price: ""
+        price: "₹ 80"
     },
     {
         img: woodenCharpai,
         name: "Wooden Charpai",
-        price: ""
+        price: "₹ 150"
     },
 ];
 
