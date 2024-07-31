@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useAnimate, stagger, motion } from "framer-motion";
 import { IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
-import logo from "../assets/logo/h-k-handicrafts-90x90.png"
+import logo from "../assets/logo/logo.png"
 export default function MobileNav() {
     const [open, setOpen] = useState(false);
     const [scope, animate] = useAnimate();
@@ -48,7 +48,7 @@ export default function MobileNav() {
 
                 </div>
                 <div className="flex items-center gap-x-2">
-                    <img src={logo} alt="" className="h-12" />
+                    <img src={logo} alt="" className="h-16" />
                     <div className="flex flex-col">
                         <span className="text-sm font-bold">Handi-Craft</span>
                         <span className="text-sm font-bold">LLP</span>

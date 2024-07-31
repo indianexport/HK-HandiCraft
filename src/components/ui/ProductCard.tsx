@@ -64,7 +64,6 @@ export function ProductCard() {
     return (
         <section className="py-10 px-8">
             <div className="mx-auto container">
-
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2">
                     {CONTENTS.map(({ img, name, price }, index) => (
                         <ScrollRevel>

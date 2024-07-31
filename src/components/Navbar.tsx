@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo/h-k-handicrafts-90x90.png"
+import logo from "../assets/logo/logo.png"
 
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { Button } from "@material-tailwind/react";
