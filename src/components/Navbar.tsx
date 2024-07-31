@@ -53,13 +53,13 @@ const Navbar = () => {
 
                         <ul className="flex gap-x-20 items-center ">
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline">Home</a>
+                                <a href="/"  className="hover:underline">Home</a>
                             </li>
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline">Product</a>
+                                <a href="/product" target="_blank"  className="hover:underline">Product</a>
                             </li>
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer" className="hover:underline">About</a>
+                                <a href="#about" rel="noopener noreferrer" className="hover:underline">About</a>
                             </li>
                             <li>
 

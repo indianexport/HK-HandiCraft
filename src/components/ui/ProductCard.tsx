@@ -11,6 +11,13 @@ interface ProductListCardPropsType {
     price: string;
 }
 
+
+import templeImage from "../../assets/images/home-temple.webp";
+import dryFruitBox from "../../assets/images/meenakari-dry-fruit-box-1000x1000.webp";
+import dandiyaStick from "../../assets/images/multicolor-decorated-dandiya-sticks-1000x1000.webp";
+
+
+
 export function ProductListCard({
     img,
     name,
@@ -44,17 +51,17 @@ export function ProductListCard({
 
 const CONTENTS = [
     {
-        img: "https://aarsunwoods.com/wp-content/uploads/2019/02/Wooden-Pooja-Temple-with-Drawers-YT-36-G-jpg.webp",
+        img: templeImage,
         name: "wooden home temple",
         price: "$1,500"
     },
     {
-        img: "https://boontoon.b-cdn.net//assets/images/catalog-product/Oxidised-wooden-and-metal-dry-fruit-box-beautified-with-stunning-design-BH-1027.webp",
+        img: dryFruitBox,
         name: "Dry fruit box",
         price: "$300"
     },
     {
-        img: "https://images-eu.ssl-images-amazon.com/images/I/51bJnDA6zlL._AC_UL600_SR600,600_.jpg",
+        img: dandiyaStick,
         name: "dandiya stick",
         price: "$40"
     },

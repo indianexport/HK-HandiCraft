@@ -7,7 +7,21 @@ import logo from "../assets/logo/logo.png"
 export default function MobileNav() {
     const [open, setOpen] = useState(false);
     const [scope, animate] = useAnimate();
-    const items = ["Home", "Product", "About", "contact"];
+    const items = [
+        {
+            name: "Home",
+            link: "/",
+        },
+        {
+            name: "Product",
+            link: "/product"
+        },
+        {
+            name: "About",
+            link: "#about"
+        }
+
+    ];
 
     // the stagger effect
     const staggerList = stagger(0.1, { startDelay: 0.25 });
@@ -77,8 +91,8 @@ export default function MobileNav() {
             <ul className="flex flex-col gap-y-5  justify-center">
                 {items.map((item, index) => (
                     <motion.li key={index} className="w-full">
-                        <a href="#" className="hover:bg-pink-400 rounded-md p-2 hover:text-white">
-                            {item}
+                        <a href={item.link} className="hover:bg-pink-400 rounded-md p-2 hover:text-white">
+                            {item.name}
                         </a>
                     </motion.li>
                 ))}
