@@ -3,6 +3,7 @@ import {
     CardBody,
     Typography,
 } from "@material-tailwind/react";
+import ScrollRevel from "../ScrollRevel";
 
 interface ProductListCardPropsType {
     img: string;
@@ -24,10 +25,8 @@ export function ProductListCard({
                         <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} className="mb-2" color="blue-gray" variant="h5">
                             {name}
                         </Typography>
-                        <div className="mb-5 flex items-center gap-2">
-                            <div className="h-5 w-5 rounded border border-gray-900 bg-brown-300 "></div>
-                            <div className="h-5 w-5 rounded border border-blue-gray-100 "></div>
-                            <div className="h-5 w-5 rounded border border-blue-gray-100 bg-gray-900 "></div>
+                        <div className="mb-5 flex  items-center gap-2">
+                            <button className="group border border-pink-100  hover:text-white relative h-12 overflow-hidden overflow-x-hidden rounded-full bg-neutral-950 px-8 py-2 text-neutral-50"><span className="relative z-10 hover:text-white">Get Quot</span><span className="absolute inset-0 overflow-hidden rounded-md"><span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-pink-400  transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
                         </div>
                     </div>
                     <Typography
@@ -45,17 +44,17 @@ export function ProductListCard({
 
 const CONTENTS = [
     {
-        img: "https://www.material-tailwind.com/image/product-4.png",
-        name: "Linen Suit",
-        price: "$2,500"
+        img: "https://aarsunwoods.com/wp-content/uploads/2019/02/Wooden-Pooja-Temple-with-Drawers-YT-36-G-jpg.webp",
+        name: "wooden home temple",
+        price: "$1,500"
     },
     {
-        img: "https://www.material-tailwind.com/image/product-3.png",
-        name: "Tweed Suit",
-        price: "$2,300"
+        img: "https://boontoon.b-cdn.net//assets/images/catalog-product/Oxidised-wooden-and-metal-dry-fruit-box-beautified-with-stunning-design-BH-1027.webp",
+        name: "Dry fruit box",
+        price: "$300"
     },
     {
-        img: "https://www.material-tailwind.com/image/product-5.png",
+        img: "https://images-eu.ssl-images-amazon.com/images/I/51bJnDA6zlL._AC_UL600_SR600,600_.jpg",
         name: "Premium Suit",
         price: "$1,240"
     },
@@ -65,14 +64,17 @@ export function ProductCard() {
     return (
         <section className="py-10 px-8">
             <div className="mx-auto container">
+
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2">
                     {CONTENTS.map(({ img, name, price }, index) => (
-                        <ProductListCard
-                            key={index}
-                            img={img}
-                            name={name}
-                            price={price}
-                        />
+                        <ScrollRevel>
+                            <ProductListCard
+                                key={index}
+                                img={img}
+                                name={name}
+                                price={price}
+                            />
+                        </ScrollRevel>
                     ))}
                 </div>
             </div>

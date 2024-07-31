@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import { useAnimate, stagger, motion } from "framer-motion";
 import { IconButton } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
-
+import logo from "../assets/logo/h-k-handicrafts-90x90.png"
 export default function MobileNav() {
     const [open, setOpen] = useState(false);
     const [scope, animate] = useAnimate();
-    const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
+    const items = ["Home", "Product", "About", "contact"];
 
     // the stagger effect
     const staggerList = stagger(0.1, { startDelay: 0.25 });
@@ -43,23 +43,37 @@ export default function MobileNav() {
 
     return (
         <div className="p-4 md:hidden  z-50 bg-white w-full" ref={scope}>
-            <motion.button onClick={() => setOpen(!open)} whileTap={{ scale: 0.95 }}>
-                <IconButton
-                    placeholder={""}
-                    onPointerEnterCapture={""}
-                    onPointerLeaveCapture={""}
-                    variant="text"
-                    className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-                    ripple={false}
-                    onClick={() => setOpen(!open)}
-                >
-                    {open ? (
-                        <XMarkIcon className="h-6 w-6" strokeWidth={2} />
-                    ) : (
-                        <Bars3Icon className="h-6 w-6" strokeWidth={2} />
-                    )}
-                </IconButton>
-            </motion.button>
+            <div className=" flex flex-row-reverse justify-between items-center">
+                <div>
+
+                </div>
+                <div className="flex items-center gap-x-2">
+                    <img src={logo} alt="" className="h-12" />
+                    <div className="flex flex-col">
+                        <span className="text-sm font-bold">Handi-Craft</span>
+                        <span className="text-sm font-bold">LLP</span>
+                    </div>
+                </div>
+
+                <motion.button onClick={() => setOpen(!open)} whileTap={{ scale: 0.95 }}>
+                    <IconButton
+                        placeholder={""}
+                        onPointerEnterCapture={""}
+                        onPointerLeaveCapture={""}
+                        variant="text"
+                        className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+                        ripple={false}
+                        onClick={() => setOpen(!open)}
+                    >
+                        {open ? (
+                            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+                        ) : (
+                            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+                        )}
+                    </IconButton>
+                </motion.button>
+
+            </div>
             <ul className="flex flex-col gap-y-5  justify-center">
                 {items.map((item, index) => (
                     <motion.li key={index} className="w-full">

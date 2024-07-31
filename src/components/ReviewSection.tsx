@@ -4,6 +4,7 @@ import {
     Rating,
     Typography,
 } from "@material-tailwind/react";
+import ScrollRevel from "./ScrollRevel";
 
 interface ReviewCardPropsType {
     title: string;
@@ -78,31 +79,41 @@ export function ReviewSection() {
         <section className="py-20 px-8">
             <div className="mx-auto container">
                 <div className="text-center">
-                    <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} variant="h6" className="mb-3 uppercase">
-                        <span className="relative flex justify-center text-pink-400">
-                            <div
-                                className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-                            ></div>
+                    <ScrollRevel>
+                        <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} variant="h6" className="mb-3 uppercase">
+                            <span className="relative flex justify-center text-pink-400">
+                                <div
+                                    className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+                                ></div>
 
-                            <span className="relative z-10 bg-white px-6"> Reviews</span>
-                        </span>
+                                <span className="relative z-10 bg-white px-6"> Reviews</span>
+                            </span>
 
-                    </Typography>
-                    <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} variant="h3">Our Customer&apos;s Opinion</Typography>
-                    <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} className="mt-3 text-center text-[18px] font-normal text-gray-500">
-                        From general feedback to detailed accounts, find out why our users
-                        love our product.
-                    </Typography>
+                        </Typography>
+                    </ScrollRevel>
+                    <ScrollRevel>
+                        <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} variant="h3">Our Customer&apos;s Opinion</Typography>
+                    </ScrollRevel>
+
+                    <ScrollRevel>
+                        <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} className="mt-3 text-center text-[18px] font-normal text-gray-500">
+                            From general feedback to detailed accounts, find out why our users
+                            love our product.
+                        </Typography>
+                    </ScrollRevel>
                 </div>
                 <div className="mt-32 grid lg:grid-cols-3 grid-cols-1 gap-y-6">
                     {CONTENTS.map(({ name, feedback, title, date }, index) => (
-                        <CardReview
-                            key={index}
-                            title={title}
-                            name={name}
-                            feedback={feedback}
-                            date={date}
-                        />
+                        <ScrollRevel>
+
+                            <CardReview
+                                key={index}
+                                title={title}
+                                name={name}
+                                feedback={feedback}
+                                date={date}
+                            />
+                        </ScrollRevel>
                     ))}
                 </div>
             </div>
