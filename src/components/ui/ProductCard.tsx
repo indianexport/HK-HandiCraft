@@ -55,8 +55,8 @@ const CONTENTS = [
     },
     {
         img: "https://images-eu.ssl-images-amazon.com/images/I/51bJnDA6zlL._AC_UL600_SR600,600_.jpg",
-        name: "Premium Suit",
-        price: "$1,240"
+        name: "dandiya stick",
+        price: "$40"
     },
 ];
 
