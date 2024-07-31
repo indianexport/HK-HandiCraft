@@ -32,19 +32,20 @@ const Navbar = () => {
                             top: 0,
                             left: 0,
                             width: "100%",
-                            padding: "0.4rem",
+                            // paddingBottom: "0.4rem",
                             zIndex: 1000
                         },
                         stable: {
                             width: "100%",
-                            padding: "0.9rem",
+                            // paddingBottom: "0.9rem",
                             color: "#000",
                         }
 
                     }}
                     animate={scroll ? "scroll" : "stable"}
-                    transition={{ ease: "easeInOut", duration: 0.4 }}
-                    className="hidden md:flex justify-around items-center ">
+                    transition={{ duration: 0.4 }}
+                    exit={"stable"}
+                    className="hidden md:flex justify-around items-center p-3 ">
                     <div className="flex justify-center items-center">
                         <img src={logo} alt="" className="h-16" />
                         {/* <span className="text-3xl font-bold">Handi-craft</span> */}
@@ -53,10 +54,10 @@ const Navbar = () => {
 
                         <ul className="flex gap-x-20 items-center ">
                             <li>
-                                <a href="/"  className="hover:underline">Home</a>
+                                <a href="/" className="hover:underline">Home</a>
                             </li>
                             <li>
-                                <a href="/product" target="_blank"  className="hover:underline">Product</a>
+                                <a href="/product" target="_blank" className="hover:underline">Product</a>
                             </li>
                             <li>
                                 <a href="#about" rel="noopener noreferrer" className="hover:underline">About</a>
