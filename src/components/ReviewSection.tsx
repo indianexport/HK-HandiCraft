@@ -53,25 +53,25 @@ export function CardReview({
 
 const CONTENTS = [
     {
-        title: "This tool has made my workflow seamless",
-        name: "Ryan Samuel",
+        title: "Pooja Chowki",
+        name: "Reema",
         feedback:
-            "I've been using this for a while now, and it's become an essential part of my daily routine. It's incredibly user-friendly and has greatly improved my productivity.",
-        date: "03 March 2024",
+            "Items quality is good. Rate is fix no bargening. Stock is available. 1 day they arrange bulk items delivered in ur placed. Delivery also arrange this people. All over so genuine in material. All marriage items are available and so reasonable price thei",
+        date: "21 December 23",
     },
     {
-        title: "It's made my job so much easier",
-        name: "Emma Roberts",
+        title: "Wooden Handicraft",
+        name: "shivani ",
         feedback:
-            "This tool has been a game-changer for me. From managing my tasks to collaborating with my team, it's made everything so much easier. Highly recommended!",
-        date: "14 February 2023",
+            "Yaar, ye pen toh bilkul jhakkas hai! 😍👌🏻 Dekhne mein itna mast lagta hai, lagta hi nahi ki handmade hai. Wood ka finish behad smooth hai, pakad mein bilkul perfect fit hota hai. Likhne mein bhi buttery smooth feel aata hai. 🖋️✨",
+        date: "26 june 2024",
     },
     {
-        title: "It's my go-to solution for staying organized.",
-        name: "Bruce Mars",
+        title: "Wooden Temple",
+        name: "mohan",
         feedback:
-            "I've been using this for a while now, and it's become an essential part of my daily routine. It's incredibly user-friendly and has greatly improved my productivity.",
-        date: "10 February 2023",
+            "Handmade wooden temple kaafi shandar hai! Iska craftsmanship bohot hi zabardast hai. Har ek detail par kaafi dhyan diya gaya hai, aur wood quality bhi top-notch hai. Isme traditional aur modern designs ka perfect blend hai jo kisi bhi ghar ki shaanta aur beauty ko enhance kar dega. Assembly bhi simple thi aur final look bilkul waise hi tha jaise photos mein dikha tha. Yeh temple ghar ke liye ek divine touch laata hai. Overall, main bohot impressed hoon is product se!",
+        date: "10 February 2024",
     },
 ];
 export function ReviewSection() {

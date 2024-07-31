@@ -33,15 +33,13 @@ const ProductSection = () => {
                     </ScrollRevel>
                     <ScrollRevel>
                         <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} className="!font-normal text-gray-500 mx-auto max-w-2xl">
-                            Simplify your shopping experience with our intuitive filter system.
-                            Whether you&apos;re looking for specific features, price ranges, or
-                            brands.
+                            Founded in the year 1985, we “H K Handicraft LLP” are a dependable and famous Manufacturer of a broad range of Home Temple, Bangle Box, Dry Fruit Box, etc.
                         </Typography>
                     </ScrollRevel >
                 </div>
 
                 <ProductCard />
-                
+
             </div>
         </div >
     );

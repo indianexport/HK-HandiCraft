@@ -34,7 +34,7 @@ export function ProductListCard({
                             {name}
                         </Typography>
                         <div className="mb-5 flex  items-center gap-2">
-                            <a href="https://wa.me/9824139927?text=I%20want%20Best%20Quote%20about%20your%20product" target="_blank" rel="noopener">
+                            <a href={`https://wa.me/9824139927?text=I%20want%20Best%20Quote%20about%20${name}%20product`} target="_blank" rel="noopener">
                                 <button className="group border border-pink-100  hover:text-white relative h-12 overflow-hidden overflow-x-hidden rounded-full bg-neutral-950 px-8 py-2 text-neutral-50"><span className="relative z-10 hover:text-white">Get Quotet</span><span className="absolute inset-0 overflow-hidden rounded-md"><span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-pink-400  transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>
                             </a>
                         </div>
@@ -56,17 +56,17 @@ const CONTENTS = [
     {
         img: templeImage,
         name: "wooden home temple",
-        price: "$1,500"
+        price: "₹ 500"
     },
     {
         img: dryFruitBox,
         name: "Dry fruit box",
-        price: "$300"
+        price: "₹ 210"
     },
     {
         img: dandiyaStick,
-        name: "dandiya stick",
-        price: "$40"
+        name: "Dandiya Stick",
+        price: "₹ 30"
     },
 ];
 

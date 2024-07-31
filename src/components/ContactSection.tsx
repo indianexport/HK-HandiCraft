@@ -37,8 +37,8 @@ const ContactSection = () => {
                 </ScrollRevel>
                 <ScrollRevel>
                     <h1 className="mb-10 font-normal !text-lg lg:mb-20 mx-auto max-w-3xl !text-gray-500">
-                        Whether it&apos;s a question about our services, a request for
-                        technical assistance, or suggestions for improvement, our team is
+                        Whether it&apos;s a question about our product, a request for
+                        product quotet assistance, or suggestions for improvement, our team is
                         eager to hear from you.
                     </h1>
                 </ScrollRevel>
