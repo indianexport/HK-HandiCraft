@@ -12,8 +12,10 @@ const Home = () => {
             <HeroSection />
             <ProductSection />
             <ReviewSection />
-            <AboutSection />
-            <ContactSection />
+            <div className='flex flex-col gap-y-56 md:gap-y-10'>
+                <AboutSection />
+                <ContactSection />
+            </div>
             <Footer />
 
         </>

@@ -8,7 +8,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactSection = () => {
     return (
-        <section id="contact" className="p-8 mb-16 lg:py-16 h-[80dvh]">
+        <section id="contact" className="p-8 mb-16 lg:py-16 h-screen md:h-[80dvh]">
             <div className="container mx-auto text-center">
                 <ScrollRevel>
 

@@ -3,7 +3,7 @@ import ScrollRevel from "./ScrollRevel";
 
 const AboutSection = () => {
     return (
-        <div className=" text-[#333333] gap-4 p-12 mt-12 mb-56 md:mb-12 justify-center items-center h-[80dvh]">
+        <div className="h-screen text-center text-[#333333] gap-4 p-12 mt-12 mb-56 md:mb-12 justify-center items-center md:h-[80dvh]">
             <ScrollRevel>
 
                 <h1
@@ -23,8 +23,8 @@ const AboutSection = () => {
             <div className="flex flex-col-reverse gap-y-20 justify-around m-2 mt-8 ">
 
                 <ScrollRevel>
-                    <div className="flex justify-center items-center space-x-12 ">
-                        <div className=" p-2 grid grid-cols-2 md:grid-cols-3 gap-8 w-full">
+                    <div className="flex justify-center items-center space-x-12 p-2 ">
+                        <div className=" text-xs md:text-sm lg:text-md p-2 grid grid-cols-2 md:grid-cols-3 gap-8 w-full">
                             <div className=" flex gap-2 flex-col items-center">
                                 <Handshake />
                                 <span>
