@@ -25,9 +25,9 @@ export function ProductListCard({
     price,
 }: ProductListCardPropsType) {
     return (
-        <Card onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} shadow={false} className="border border-gray-300">
+        <Card onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} shadow={false} className="border border-gray-300 hover:scale-105 transition transform duration-500">
             <CardBody onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} className="pb-0">
-                <img src={img} alt={img} className="min-w-[280px] w-full" />
+                <img src={img} alt={img} className="min-w-[280px] w-full rounded-lg" />
                 <div className="flex justify-between">
                     <div>
                         <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} className="mb-2" color="blue-gray" variant="h5">

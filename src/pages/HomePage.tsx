@@ -1,3 +1,4 @@
+import AboutSection from '../components/AboutSection'
 import ContactSection from '../components/ContactSection'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
@@ -11,10 +12,10 @@ const Home = () => {
             <HeroSection />
             <ProductSection />
             <ReviewSection />
-            {/* <AboutSection /> */}
+            <AboutSection />
             <ContactSection />
             <Footer />
-     
+
         </>
     );
 }

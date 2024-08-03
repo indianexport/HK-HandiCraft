@@ -18,9 +18,12 @@ export default function MobileNav() {
         },
         {
             name: "About",
-            link: "#about"
+            link: "/about"
+        },
+        {
+            name: "Contact",
+            link: "/contact"
         }
-
     ];
 
     // the stagger effect
@@ -33,7 +36,7 @@ export default function MobileNav() {
         animate(
             "ul",
             {
-                width: open ? 150 : 0,
+                width: open ? "100%" : 0,
                 height: open ? 200 : 0,
                 opacity: open ? 1 : 0
             },
@@ -44,7 +47,7 @@ export default function MobileNav() {
             }
         );
         animate(
-            "li",
+            "a",
             open
                 ? { opacity: 1, scale: 1, x: 0 }
                 : { opacity: 0, scale: 0.3, x: -50 },
@@ -56,7 +59,7 @@ export default function MobileNav() {
     }, [open]);
 
     return (
-        <div className="p-4 md:hidden  z-50 bg-white w-full" ref={scope}>
+        <div className="p-4 md:hidden  z-50 bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] text-white w-full" ref={scope}>
             <div className=" flex flex-row-reverse justify-between items-center">
                 <div>
 
@@ -88,13 +91,13 @@ export default function MobileNav() {
                 </motion.button>
 
             </div>
-            <ul className="flex flex-col gap-y-5  justify-center">
+            <ul className="flex flex-col gap-y-5  justify-center w-screen p-1">
                 {items.map((item, index) => (
-                    <motion.li key={index} className="w-full">
-                        <a href={item.link} className="hover:bg-pink-400 rounded-md p-2 hover:text-white">
-                            {item.name}
-                        </a>
-                    </motion.li>
+                    // <motion.li key={index} className="w-screen">
+                    <a key={index} href={item.link} className="hover:bg-gray-900 rounded-md p-2 hover:text-white">
+                        {item.name}
+                    </a>
+                    // </motion.li>
                 ))}
             </ul>
         </div>

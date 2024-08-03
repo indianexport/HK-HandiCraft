@@ -26,8 +26,8 @@ const Navbar = () => {
                 <motion.nav
                     variants={{
                         scroll: {
-                            backgroundColor: "#fff",
-                            color: "#000",
+                            backgroundColor: "#000",
+                            color: "#fff",
                             position: "fixed",
                             top: 0,
                             left: 0,
@@ -38,17 +38,20 @@ const Navbar = () => {
                         stable: {
                             width: "100%",
                             // paddingBottom: "0.9rem",
-                            color: "#000",
+                            color: "#fff",
                         }
 
                     }}
                     animate={scroll ? "scroll" : "stable"}
                     transition={{ duration: 0.4 }}
                     exit={"stable"}
-                    className="hidden md:flex justify-around items-center p-3 ">
+                    className="hidden md:flex justify-around items-center p-3 bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] ">
                     <div className="flex justify-center items-center">
                         <img src={logo} alt="" className="h-16" />
-                        {/* <span className="text-3xl font-bold">Handi-craft</span> */}
+                        <div className="flex flex-col">
+                            <span className="text-sm font-bold">Handi-Craft</span>
+                            <span className="text-sm font-bold">LLP</span>
+                        </div>
                     </div>
                     <div className="flex items-center space-x-8">
 
@@ -60,7 +63,7 @@ const Navbar = () => {
                                 <a href="/product" target="_blank" className="hover:underline">Product</a>
                             </li>
                             <li>
-                                <a href="#about" rel="noopener noreferrer" className="hover:underline">About</a>
+                                <a href="/about" rel="noopener noreferrer" className="hover:underline">About</a>
                             </li>
                             <li>
 
@@ -70,7 +73,7 @@ const Navbar = () => {
                                     placeholder={""}
                                     className="!bg-[#d61242] !text-white !font-bold rounded-full hover:bg-pink-300"
                                 >
-                                    <a href="#" target="" rel="noopener noreferrer">Contact</a>
+                                    <a href="/contact">Contact</a>
                                 </Button>
 
                             </li>
