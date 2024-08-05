@@ -21,11 +21,7 @@ const ProductSection = () => {
             <div className="flex flex-col">
                 {/* product card */}
                 <div className="mx-auto text-center mb-16">
-                    <ScrollRevel>
-                        <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} className="font-medium text-lg">
-                            Tailored Product Search
-                        </Typography>
-                    </ScrollRevel>
+                    
                     <ScrollRevel>
                         <Typography onPointerLeaveCapture={""} placeholder={""} onPointerEnterCapture={""} variant="h1" className="my-4 text-4xl">
                             Find What You Need

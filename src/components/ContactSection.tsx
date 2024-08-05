@@ -62,15 +62,26 @@ const ContactSection = () => {
                                 Shop No. 4, Sahajanand Market, Pirmohammad Sha Road, Pankore Naka, Ahmedabad - 380001, Gujarat, India
                             </div>
                         </div>
-                        <div className="flex flex-col items-center md:items-end md:gap-x-4 gap-y-3">
-                            <div className=" flex gap-x-2">
-                                <IoLogoWhatsapp className="text-green-300" size={26} />
-                                <a href="https://wa.me/919824139927?text=I%20want%20Best%20Quote%20about%20your%20product" target="_blank" rel="noopener">+91 9824139927</a>
+                        <div className="flex flex-col items-center md:items-end md:gap-x-4 gap-y-2">
+                            <div className=" flex gap-x-2 md:flex-col md:gap-y-2 ">
+                                <div className="flex gap-x-2">
+                                    <IoLogoWhatsapp className="text-green-300" size={26} />
+                                    <a href="https://wa.me/919825583224?text=I%20want%20Best%20Quote%20about%20your%20product" target="_blank" rel="noopener">+91 9825583224</a>
+                                </div>
+                                <div className="flex gap-x-2">
+                                    <IoLogoWhatsapp className="text-green-300" size={26} />
+                                    <a href="https://wa.me/919824139927?text=I%20want%20Best%20Quote%20about%20your%20product" target="_blank" rel="noopener">+91 9824139927</a>
+                                </div>
                             </div>
 
-                            <div className="flex gap-x-2 items-center">
-                                {/* <FaPhoneAlt color="green" /><a href="tel:+91 98241 39927">98241 39927</a> */}
-                                <FaPhoneAlt color="green" /><a href="tel:+91 98255 83224">+91 9825583224</a>
+                            <div className="flex gap-x-2 items-center md:flex-col md:gap-y-2">
+                                <div className="flex gap-x-2">
+                                    <FaPhoneAlt color="green" /><a href="tel:+91 98255 83224">+91 9825583224</a>
+                                </div>
+
+                                <div className="flex gap-x-2">
+                                    <FaPhoneAlt color="green" /><a href="tel:+91 98241 39927">+91 9824139927</a>
+                                </div>
                             </div>
                             <div className="flex items-center gap-x-2">
                                 <CgMail className="text-red-300" size={26} />
